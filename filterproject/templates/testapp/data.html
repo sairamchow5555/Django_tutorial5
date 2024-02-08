@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/fp.css' %}">
+  </head>
+  <body>
+    {% for record in records %}
+    <h1>{{record.name}} Information</h1>
+    <ul>
+      <li>Name : {{record.name}}</li>
+      <li>Subject : {{record.subject}}</li>
+      <li>Dept : {{record.dept}}</li>
+      <li>Date ; {{record.date}}</li>
+    </ul><hr>
+    {% endfor %}
+  </body>
+</html>
